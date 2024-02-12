@@ -3,14 +3,25 @@ header{
 }
 
 :root{
-  --my-left-bar: #051E34;
+  --my-dark-blue: #051E34;
+  --my-blue: #1B72E8;
+  --my-white: #F8F9FA;
+  --my-gray: #E5E5E5;
+  --my-light-gray: #F7F7F7;
+  --my-border-gray: #DADADA;
+  --my-flag-green: #198754;
+  --my-flag-orange: #FFC106;
+  --my-flag-red: #DB3444;
+  --my-bell-orange: #FF8E00;
+  --my-text-gray: #5A5757;
+  --my-text-black: #3A3D40;
 }
 
 .my-left-bar{
   width: 150px;
   height: calc(100vh - 70px);
   background-image: url(../img/sidebar-bg.png);
-  background-color: var(--my-left-bar)
+  background-color: var(--my-dark-blue)
   ;
 }
 
@@ -26,4 +37,18 @@ header{
 
 .my-dashborad-contetn{
   min-height: calc(100% - 10vh);
+}
+
+.my-box{
+  background-color: yellow;
+}
+
+@media screen and (max-width:768px){
+  .my-left-bar{
+    width: 70px;
+  }
+
+  .my-dashboard{
+    width: calc(100% - 70px);
+  }
 }
