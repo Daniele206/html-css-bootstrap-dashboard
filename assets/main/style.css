@@ -1,0 +1,14 @@
+header{
+  height: 70px;
+}
+
+.my-left-bar{
+  width: 150px;
+  height: calc(100vh - 70px);
+}
+
+.my-dashboard{
+  width: calc(100% - 150px);
+  height: calc(100vh - 70px);
+  overflow-y: scroll;
+}
