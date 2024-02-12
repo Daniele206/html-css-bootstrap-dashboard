@@ -77,6 +77,28 @@ header{
   ;
 }
 
+.my-btn-left-bar{
+  cursor: pointer;
+  transition: .7s;
+}
+
+.my-btn-left-bar:hover{
+  background-color: rgba(255, 255, 255, 0.697);
+  transition: .7s;
+}
+
+.my-home{
+  padding-right: 10px;
+}
+
+.my-stats{
+  padding-right: 13px;
+}
+
+.my-signal{
+  padding-right: 7px;
+}
+
 .my-dashboard{
   width: calc(100% - 150px);
   height: calc(100vh - 70px);
