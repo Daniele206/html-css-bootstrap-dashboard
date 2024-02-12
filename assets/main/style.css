@@ -1,5 +1,5 @@
-header{
-  height: 70px;
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -15,6 +15,58 @@ header{
   --my-bell-orange: #FF8E00;
   --my-text-gray: #5A5757;
   --my-text-black: #3A3D40;
+}
+
+.my-bg-white{
+  background-color: var(--my-white);
+}
+
+.my-bg-gray{
+  background-color: var(--my-gray);
+}
+
+.my-text-gray{
+  color: var(--my-text-gray);
+}
+
+.my-bell-orange{
+  color: var(--my-bell-orange);
+}
+
+header{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.my-container{
+  height: 40px;
+}
+
+.my-logo{
+  width: 10%;
+  height: 100%;
+  padding-left: 10px;
+}
+
+.my-logo img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.my-menu{
+  width: 10%;
+  padding-right: 10px;
+}
+
+.my-near{
+  border-radius: 8px;
+  width: 80%;
+}
+
+.my-near input{
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
 }
 
 .my-left-bar{

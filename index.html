@@ -4,17 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css' integrity='sha512-r0fo0kMK8myZfuKWk9b6yY8azUnHCPhgNz/uWDl2rtMdWJlk7gmd9socvGZdZzICwAkMgfTkVrplDahQ07Gi0A==' crossorigin='anonymous'/>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.js' integrity='sha512-ipBeSMCnlAvS4AEbycy0nTk9KkYr5lUJwFHNvf4IxtV/CDW4qx53mZKUryWtNr6GFaBl11EXyrU6iE3mo6ib2g==' crossorigin='anonymous'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css' integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==' crossorigin='anonymous'/>
   <link rel="stylesheet" href="./assets/main/style.css">
   <title>Dashboard</title>
 </head>
 <body>
-  <header>
-    <div class="container-fluid bg-black h-100">
-      <div class="row h-100">
-        <div class="col col-1 bg-danger"></div>
-        <div class="col col-10 bg-success"></div>
-        <div class="col col-1 bg-danger"></div>
+  <header class="my-bg-white d-flex align-items-center">
+    <div class="my-container w-100 bg-white d-flex justify-content-between align-items-center">
+      <div class="my-logo d-flex align-items-center justify-content-center justify-content-md-start">
+        <img class="d-none d-md-block" src="./assets/img/logo.svg" alt="logo">
+        <img class="d-md-none my-logo-mobile" src="./assets/img/mobile-logo.png" alt="logo-mobile">
+      </div>
+      <div class="my-near h-100 my-bg-gray d-flex align-items-center">
+        <i class="px-2 fa-solid fa-magnifying-glass"></i>
+        <input class="w-100 p-2 fs-6" type="text" placeholder="Prova a cercare: Lezioni di Laravel">
+      </div>
+      <div class="my-menu ps-4 d-flex justify-content-between align-items-center my-text-gray">
+        <i class="d-none d-md-block fa-solid fa-list-ul"></i>
+        <i class="d-none d-md-block fa-solid fa-circle-question"></i>
+        <i class="d-none d-md-block fa-solid fa-ellipsis-vertical"></i>
+        <div class="dropdown">
+          <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="my-bell-orange fa-solid fa-bell"></i>
+          </div>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Profilo</button></li>
+            <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+            <li><button class="dropdown-item" type="button">Logout</button></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
