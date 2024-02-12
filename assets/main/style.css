@@ -2,13 +2,28 @@ header{
   height: 70px;
 }
 
+:root{
+  --my-left-bar: #051E34;
+}
+
 .my-left-bar{
   width: 150px;
   height: calc(100vh - 70px);
+  background-image: url(../img/sidebar-bg.png);
+  background-color: var(--my-left-bar)
+  ;
 }
 
 .my-dashboard{
   width: calc(100% - 150px);
   height: calc(100vh - 70px);
-  overflow-y: scroll;
+  overflow-y: auto;
+}
+
+.my-dashboard-top-bar{
+  height: 10vh;
+}
+
+.my-dashborad-contetn{
+  min-height: calc(100% - 10vh);
 }
