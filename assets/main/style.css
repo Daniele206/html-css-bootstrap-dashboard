@@ -9,9 +9,6 @@ body{
   --my-gray: #E5E5E5;
   --my-light-gray: #F7F7F7;
   --my-border-gray: #DADADA;
-  --my-flag-green: #198754;
-  --my-flag-orange: #FFC106;
-  --my-flag-red: #DB3444;
   --my-bell-orange: #FF8E00;
   --my-text-gray: #5A5757;
   --my-text-black: #3A3D40;
@@ -27,6 +24,22 @@ body{
 
 .my-bg-blue{
   background-color: var(--my-blue);
+}
+
+.my-br-gray{
+  border: 1px solid var(--my-border-gray);
+}
+
+.my-br-bt-gray{
+  border-bottom: 1px solid var(--my-border-gray);
+}
+
+.my-br-radius{
+  border-radius: 10px;
+}
+
+.my-br-top-radius{
+  border-radius: 15px 15px 0 0;
 }
 
 .my-text-gray{
@@ -126,8 +139,12 @@ header{
   min-height: calc(100% - 10vh);
 }
 
+.my-class-avatar{
+  width: 40px;
+}
+
 .my-box{
-  background-color: yellow;
+  background-color: white;
 }
 
 @media screen and (max-width:768px){
