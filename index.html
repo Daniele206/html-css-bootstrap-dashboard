@@ -53,14 +53,10 @@
           <div class="my-btn-left-bar px-2 px-md-3 py-1"><i class="py-2 pe-md-2 fa-solid fa-gear"></i> <span class="d-none d-md-inline">Admin</span></div>
         </div>
       </div>
-      <div class="my-dashboard bg-primary">
-        <div class="container-fluid my-dashboard-top-bar py-3">
+      <div class="my-dashboard">
+        <div class="container-fluid my-bg-blue my-dashboard-top-bar py-3">
           <div class="row h-100 text-white">
-            <div class="col col-12 col-sm-6 d-flex d-sm-none align-items-center">
-              <span class="me-2">Nuovo Studente</span>
-              <div class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></div>
-            </div>
-            <div class="col col-12 col-sm-4 col-md-6 text-white d-flex justify-content-center flex-column">
+            <div class="col col-12 col-md-6 col-sm-4 text-white d-flex justify-content-center flex-column order-2 order-sm-0">
               <div class="d-flex align-items-center flex-wrap my-1">
                 <h3 class="me-2">Boolean</h3>
                 <div class="my-btn-dashboard">Piano blaze</div>
@@ -83,9 +79,7 @@
                 <div class="d-none d-md-block my-btn-dashboard">Bolean blog app</div>
               </div>
             </div>
-            <div class="col col-12 col-sm-8 col-md-6">
-              <div class="row h-100 text-white">
-                <div class="col col-12 col-sm-6 d-flex flex-column justify-content-center">
+                <div class="col col-12 col-md-3 col-sm-4 d-flex flex-column justify-content-center order-3 order-sm-0">
                   <div>
                     <p class="m-0">Studenti online negli ultimi 30 minuti</p>
                   </div>
@@ -93,19 +87,27 @@
                     <span class="fs-2 ">125</span>
                   </div>
                 </div>
-                <div class="col col-12 col-sm-6 align-items-center justify-content-end d-none d-sm-flex px-md-5">
+                <div class="col col-12 col-md-3 col-sm-4 align-items-center d-flex justify-content-sm-end px-md-5 order-1 order-sm-0">
                   <span class="me-2">Nuovo Studente</span>
-                  <div class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></div>
+                  <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserrisci un nuovo studente</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      ...
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="container-fluid my-dashborad-contetn bg-success">
           <div class="row">
             <div class="col col-12 col-md-8 bg-warning">
               <div class="my-box my-3" style="height: 450px;">
-
+                <div class="table table-hover">
+                </div>
               </div>
               <div class="my-box my-3" style="height: 200px;">
                 
