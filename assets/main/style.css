@@ -25,6 +25,10 @@ body{
   background-color: var(--my-gray);
 }
 
+.my-bg-blue{
+  background-color: var(--my-blue);
+}
+
 .my-text-gray{
   color: var(--my-text-gray);
 }
@@ -43,24 +47,23 @@ header{
 }
 
 .my-logo{
-  width: 10%;
+  width: 160px;
   height: 100%;
   padding-left: 10px;
 }
 
 .my-logo img{
   max-height: 100%;
-  max-width: 100%;
 }
 
 .my-menu{
-  width: 10%;
+  width: 160px;
   padding-right: 10px;
 }
 
 .my-near{
   border-radius: 8px;
-  width: 80%;
+  flex-grow: 1;
 }
 
 .my-near input{
@@ -106,7 +109,21 @@ header{
 }
 
 .my-dashboard-top-bar{
-  height: 10vh;
+  
+}
+
+.my-btn-dashboard{
+  background-color: rgba(0, 0, 0, 0.23);
+  padding: 2px 8px 2px 8px;
+  border-radius: 25px;
+  transition: .3s;
+  font-size: .8rem;
+}
+
+.my-btn-dashboard:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.448);
+  transition: .3s;
 }
 
 .my-dashborad-contetn{
@@ -124,5 +141,29 @@ header{
 
   .my-dashboard{
     width: calc(100% - 70px);
+  }
+
+    
+  .my-logo{
+    width: 60px;
+    height: 100%;
+    padding-left: 10px;
+  }
+
+  .my-menu{
+    width: 60px;
+    padding-right: 10px;
+  }
+  
+  .my-home{
+    padding-right: 0;
+  }
+
+  .my-stats{
+    padding-right: 0;
+  }
+
+  .my-signal{
+    padding-right: 0;
   }
 }
