@@ -55,6 +55,10 @@ header{
   padding-bottom: 15px;
 }
 
+.my-form{
+  width: 800px !important;
+}
+
 .my-container{
   height: 40px;
 }
@@ -147,6 +151,24 @@ header{
   background-color: white;
 }
 
+.my-form-mid{
+  width: 49%;
+}
+
+.my-form-mid-min{
+  width: 28%;
+}
+
+.my-form-min{
+  width: 20%;
+}
+
+@media screen and (max-width:992px){
+  .my-form{
+    width: 100% !important;
+  }
+}
+
 @media screen and (max-width:768px){
   .my-left-bar{
     width: 70px;
@@ -178,5 +200,17 @@ header{
 
   .my-signal{
     padding-right: 0;
+  }
+
+  .my-form-mid{
+    width: 100%;
+  }
+
+  .my-form-mid-min{
+    width: 100%;
+  }
+  
+  .my-form-min{
+    width: 100%;
   }
 }
